@@ -1,0 +1,203 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .flex {
+        flex-wrap: wrap;
+    }
+
+    .plane {
+        width: 50vw;
+        order: 2;
+        margin-top: 0;
+        height: 250px;
+    }
+
+    .copy-container {
+        width: 100vw;
+        order: 1;
+    }
+
+    .pin {
+        width: 50vw;
+        order: 3;
+        margin-top: 0;
+        height: 250px;
+    }
+
+    .left {
+        margin-top: 50px;
+        width: 100%;
+        padding: 0;
+        border-right: none;
+    }
+
+    .logo {
+        width: 70%;
+    }
+
+    .right {
+        margin-top: 50px;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .social-media-icons {
+        margin-top: 0;
+    }
+
+    .small-print {
+        width: 90%
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) 
+and (max-width: 768px) {
+
+    .flex {
+        flex-wrap: wrap;
+    }
+
+    .plane {
+        width: 50vw;
+        order: 2;
+        margin-top: 0;
+        height: 250px;
+    }
+
+    .copy-container {
+        width: 100vw;
+        order: 1;
+    }
+
+    .pin {
+        width: 50vw;
+        order: 3;
+        margin-top: 0;
+        height: 250px;
+    }
+
+    .left {
+        margin-top: 50px;
+        width: 100%;
+        padding: 0;
+        border-right: none;
+    }
+
+    .logo {
+        width: 70%;
+    }
+
+    .right {
+        margin-top: 50px;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .social-media-icons {
+        margin-top: 0;
+    }
+
+    .small-print {
+        width: 90%
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px)
+and (max-width: 991px) {
+
+
+    .flex {
+        flex-wrap: wrap;
+    }
+
+    .plane {
+        width: 30vw;
+        margin-top: 0;
+        height: 250px;
+    }
+
+    .copy-container {
+        width: 40vw;
+    }
+
+    .pin {
+        width: 30vw;
+        margin-top: 0;
+        height: 250px;
+    }
+
+    .left {
+        margin-top: 70px;
+        width: 100%;
+        padding: 0;
+        border-right: none;
+    }
+
+    .logo{
+        width: 100%;
+    }
+
+    .right {
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .social-media-icons {
+        margin-top: 0;
+    }
+
+    .small-print {
+        width: 90%
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 991px) 
+and (max-width: 1200px) {
+
+    .plane {
+        width: 25vw;
+        margin-top: 0;
+        height: 250px;
+    }
+
+    .copy-container {
+        width: 50vw;
+    }
+
+    .pin {
+        width: 25vw;
+        margin-top: 0;
+        height: 250px;
+    }
+
+    .left {
+        margin-top: 70px;
+        width: 50%;
+    }
+
+    .left img {
+        width: 100%;
+    }
+
+    .right {
+        margin-top: 20px;
+        width: 50%;
+        text-align: center;
+    }
+
+    .social-media-icons {
+        margin-top: 0;
+    }
+
+    .small-print {
+        width: 90%
+    }
+}
