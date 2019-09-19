@@ -1,21 +1,3 @@
-body {
-  background-image: url(../images/background.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #fbf7ee;
-  height: 100vh;
-  padding: 0;
-}
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.border {
-  margin-top: 30px;
-}
 
 /*# sourceMappingURL=css.css.map */
