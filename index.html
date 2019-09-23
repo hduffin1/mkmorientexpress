@@ -8,11 +8,23 @@
     <link rel="stylesheet" type="text/css" href="sass/animate.min.css">
     <link rel="stylesheet" type="text/css" href="sass/media-queries.css">
     <link rel="stylesheet" href="https://use.typekit.net/iol0ecs.css">
+    <script>(function(H){H.className=H.className+="js"})(document.documentElement)</script>
 </head>
 
 <div class="container">
+    <header class="header animated fadeInUp">
+        <nav class="nav flex">
+            <a class="skip" href="#menu">Menu</a>
+            <ul id="menu">
+                <li><a href="#" class="hvr-underline-from-center">Overview</a></li>
+                <li><a href="#" class="hvr-underline-from-center">Train</a></li>
+                <li><a href="#" class="hvr-underline-from-center">Hotel</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <div class="landing-holder">
-        <img src="images/circle-6s.svg">
+        <img src="images/circle-6s2.svg">
         <div class="copy-holder animated fadeIn">
             <h1>You're Invited</h1>
             <p>To join us on a once-in-a-lifetime journey aboard the world-famous Orient Express from London to Venice.</p>
@@ -23,4 +35,35 @@
 </div>
 
 </body>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous">
+</script>
+
+<script>
+    var nav = document.querySelector("nav ul"),
+        navToggle = document.querySelector("nav .skip");
+    if (navToggle) {
+      navToggle.addEventListener("click",
+      function(e) {
+      if (nav.className == "open") {
+        nav.className = "";
+      } else {
+        nav.className = "open";
+      }
+      e.preventDefault();
+      }, false);
+    }
+    /* Any click outside of the nav element will close the menu if it's open */
+    var specifiedElement = document.querySelector('nav');
+    document.addEventListener('click', function(event) {
+      var isClickInside = specifiedElement.contains(event.target);
+      if (!isClickInside && nav.className == "open") {
+        nav.className = "";
+      } 
+    });
+</script>
+
 </html>
