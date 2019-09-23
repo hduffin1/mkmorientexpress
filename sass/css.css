@@ -9,6 +9,30 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+h1 {
+  font-family: "valenciaregular";
+  font-size: 55px;
+  color: #c3a343;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(transparent, transparent), url(../images/gold.jpg) repeat;
+  background: -o-linear-gradient(transparent, transparent);
+  -webkit-background-clip: text;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-family: "valenciaregular";
+  font-size: 30px;
+  color: #fffdf2;
+}
+
+h3 {
+  font-family: interstate, sans-serif;
+  font-weight: 700px;
+  font-size: 20px;
+  color: #fffdf2;
+}
+
 .container {
   max-width: 1000px;
   margin: 0 auto;
@@ -27,21 +51,9 @@ body {
   text-align: center;
   animation-delay: 4.5s;
 }
-.copy-holder h1 {
-  font-family: "valenciaregular";
-  font-size: 60px;
-  color: #c3a343;
-  -webkit-text-fill-color: transparent;
-  background: -webkit-linear-gradient(transparent, transparent), url(../images/gold.jpg) repeat;
-  background: -o-linear-gradient(transparent, transparent);
-  -webkit-background-clip: text;
-  animation-delay: 4s;
-  margin-bottom: 20px;
-}
 .copy-holder h2 {
-  font-family: "valenciaregular";
-  font-size: 30px;
-  color: #fffdf2;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .copy-holder p {
   margin: 0 auto;
@@ -49,6 +61,19 @@ body {
   font-family: interstate, sans-serif;
   font-size: 20px;
   color: #fffdf2;
+}
+.copy-holder .reg-btn {
+  text-transform: uppercase;
+  margin: 0 auto;
+  width: 20%;
+  background: -webkit-linear-gradient(transparent, transparent), url(../images/gold.jpg) repeat;
+  background: -o-linear-gradient(transparent, transparent);
+  padding: 1px 1px;
+}
+.copy-holder .reg-btn h3 {
+  background-color: #052d44;
+  padding: 10px 15px;
+  margin: 0;
 }
 
 /*# sourceMappingURL=css.css.map */
