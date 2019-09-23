@@ -35,7 +35,7 @@ header {
   left: 51%;
   right: 51%;
   bottom: 0;
-  background: #2098D1;
+  background: #052d44;
   height: 2px;
   -webkit-transition-property: left, right;
   transition-property: left, right;
@@ -191,7 +191,7 @@ h3 {
 
 .flex {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .landing-holder {

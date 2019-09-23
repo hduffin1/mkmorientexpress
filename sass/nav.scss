@@ -16,7 +16,7 @@
         position: relative;
         overflow: hidden;
     }
-    
+
     .hvr-underline-from-center:before {
         content: "";
         position: absolute;
@@ -24,7 +24,7 @@
         left: 51%;
         right: 51%;
         bottom: 0;
-        background: #2098D1;
+        background: $darkblue;
         height: 2px;
         -webkit-transition-property: left, right;
         transition-property: left, right;
