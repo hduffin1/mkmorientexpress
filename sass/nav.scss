@@ -1,11 +1,12 @@
 /* navigation */
     header {
         margin: 0;
+        margin-top: 20px;
         z-index: 20000;
         background-color: $cream;
         animation-delay: 4.5s;
     }
-
+    
     /* Underline From Center */
     .hvr-underline-from-center {
         display: inline-block;
