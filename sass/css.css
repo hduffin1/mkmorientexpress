@@ -16,7 +16,7 @@ header {
   margin-top: 20px;
   z-index: 20000;
   background-color: #fffdf2;
-  animation-delay: 4.5s;
+  animation-delay: 5.5s;
 }
 
 /* Underline From Center */
@@ -213,7 +213,7 @@ h3 {
   position: absolute;
   top: 21%;
   text-align: center;
-  animation-delay: 4s;
+  animation-delay: 5.2s;
 }
 .copy-holder h2 {
   padding-top: 5px;
