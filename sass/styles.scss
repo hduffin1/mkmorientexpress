@@ -28,7 +28,7 @@ h1 {
     font-size: 35px;
     margin-bottom: 20px;
     -webkit-text-fill-color: $darkblue;
-    animation-delay: .2s;
+    animation-delay: .5s;
 }
 
 h2 {
@@ -125,12 +125,18 @@ p {
 .column-1 {
     max-width: 45%;
 
+    p {
+        animation-delay: .5s;
+    }
+
     .reg-now {
         width: 40%;
         text-align: center;
         border: 1px solid $darkblue;
         padding: 1px 1px;
-        margin-top: 20px;
+        margin-top: 30px;
+        animation-delay: .5s;
+
         h3 {
             font-size: 16px;
             margin: 0;
@@ -142,6 +148,15 @@ p {
         a {
             text-decoration: none;
         }
+
+        &:hover {
+            border: 1px solid #f2d77c;
+            transition: .2s;
+            h3{
+                color: #f2d77c;
+                transition: .2s;
+            }
+        }
     }
 }
 
@@ -149,6 +164,7 @@ p {
     max-width: 45%;
     img {
         width: 100%;
+        animation-delay: .5s;
     }
 }
 
