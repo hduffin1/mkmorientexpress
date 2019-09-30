@@ -6,6 +6,10 @@
         background-color: $cream;
         animation-delay: 5.5s;
     }
+
+    .header-static {
+      animation-delay: .2s;
+    }
     
     /* Underline From Center */
     .hvr-underline-from-center {
@@ -56,6 +60,10 @@
         font-weight: 700;
         font-size: 14px;
         text-transform: uppercase;
+
+        &hover {
+          cursor: pointer;
+        }
       }
     }
 

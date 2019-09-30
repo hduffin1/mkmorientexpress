@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welome to the MKM Orient Express | Overview</title>
+    <title>Welome to the MKM Orient Express</title>
     <link rel="stylesheet" type="text/css" href="sass/css.css">
     <link rel="stylesheet" type="text/css" href="sass/animate.min.css">
     <link rel="stylesheet" type="text/css" href="sass/media-queries.css">
@@ -11,29 +11,48 @@
     <script>(function(H){H.className=H.className+="js"})(document.documentElement)</script>
 </head>
 
-<div class="container">
-    <header class="header-page">
-        <nav class="nav flex">
-            <a class="skip" href="#menu">Menu</a>
-            <ul id="menu">
-                <li><a href="index.html" class="hvr-underline-from-center">Home</a></li>
-                <li><a href="overview.html" class="hvr-underline-from-center">Overview</a></li>
-                <li><a href="#" class="hvr-underline-from-center">Train</a></li>
-                <li><a href="#" class="hvr-underline-from-center">Hotel</a></li>
-            </ul>
-        </nav>
-    </header>
+<body>
 
-    <div class="flex">
-        <div class="content">
-        </div>
-    </div>
-</div>
+  <div class="container">
+      <header class="header-static">
+          <nav class="nav flex">
+              <a class="skip" href="#menu">Menu</a>
+              <ul id="menu">
+                  <li><a href="index.html" class="hvr-underline-from-center">Home</a></li>
+                  <li><a href="#" class="hvr-underline-from-center">Overview</a></li>
+                  <li><a href="#" class="hvr-underline-from-center">Train</a></li>
+                  <li><a href="#" class="hvr-underline-from-center">Hotel</a></li>
+              </ul>
+          </nav>
+      </header>
+
+      <div class="content-holder overview">
+          <div class="flex-page">
+              <div class="column-1">
+                <h1 class="title animated fadeInUp">Overview</h1>
+                <p class="animated fadeInUp">In order to celebrate MKM’s milestone 25th anniversary, we are inviting you to join us on a once-in-a-lifetime journey aboard the world-famous Orient Express from London to Venice.
+                <br><br>
+                Staying aboard the British Pullman for a night before arriving at the San Clemente Palace in Venice, you’ll experience nothing but comfort and enchantment as your private on board cabin is transformed into a cosy bedroom – allowing you to relax at every point of the journey.
+                <br><br>
+                The end destination of Venice is one that promises a magnificent adventure in the ‘City of Canals’ – arguably one of the most beautiful and alluring cities in the world. 
+                <br><br>
+                Whilst in Venice, we’ll make the most of its vibrant and affluent spirit, enjoying a scenic drinks reception and lavish gala dinner during the two-night stay.
+                <br><br>
+                Thank you for your loyal and continued custom, and we can’t wait for you to join us on this incredible trip.
+                </p>
+
+                <div class="reg-now animated fadeInUp"><a href=""><h3>Register Now</h3></a></div>
+              </div> 
+
+              <div class="column-2">
+                <img src="images/overview-img.jpg" class="animated fadeInUp">
+              </div>
+          </div>  
+      </div>
+  </div>
 
 </body>
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
-</script>
 
 <script>
     var nav = document.querySelector("nav ul"),
@@ -58,4 +77,6 @@
       } 
     });
 </script>
+
+
 </html>

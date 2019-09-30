@@ -19,6 +19,10 @@ header {
   animation-delay: 5.5s;
 }
 
+.header-static {
+  animation-delay: 0.2s;
+}
+
 /* Underline From Center */
 .hvr-underline-from-center {
   display: inline-block;
@@ -67,6 +71,9 @@ header {
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
+}
+.nav ul ahover {
+  cursor: pointer;
 }
 
 /* Style the menu link */
@@ -173,6 +180,14 @@ h1 {
   margin-bottom: 20px;
 }
 
+.title {
+  font-family: "valenciaregular";
+  font-size: 35px;
+  margin-bottom: 20px;
+  -webkit-text-fill-color: #052d44;
+  animation-delay: 0.2s;
+}
+
 h2 {
   font-family: "valenciaregular";
   font-size: 30px;
@@ -186,6 +201,13 @@ h3 {
   color: #fffdf2;
 }
 
+p {
+  margin: 0 auto;
+  font-family: interstate, sans-serif;
+  font-size: 15px;
+  color: #052d44;
+}
+
 .container {
   max-width: 1000px;
   margin: 0 auto;
@@ -194,6 +216,11 @@ h3 {
 .flex {
   display: flex;
   justify-content: space-evenly;
+}
+
+.flex-page {
+  display: flex;
+  justify-content: space-between;
 }
 
 .landing-holder {
@@ -241,6 +268,38 @@ h3 {
 }
 .copy-holder .reg-btn a {
   text-decoration: none;
+}
+
+.content-holder {
+  margin-top: 15%;
+}
+
+.column-1 {
+  max-width: 45%;
+}
+.column-1 .reg-now {
+  width: 40%;
+  text-align: center;
+  border: 1px solid #052d44;
+  padding: 1px 1px;
+  margin-top: 20px;
+}
+.column-1 .reg-now h3 {
+  font-size: 16px;
+  margin: 0;
+  padding: 5px;
+  text-transform: uppercase;
+  color: #052d44;
+}
+.column-1 .reg-now a {
+  text-decoration: none;
+}
+
+.column-2 {
+  max-width: 45%;
+}
+.column-2 img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=css.css.map */
