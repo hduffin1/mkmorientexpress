@@ -75,6 +75,9 @@ header {
 .nav ul ahover {
   cursor: pointer;
 }
+.nav ul aactive {
+  color: red;
+}
 
 /* Style the menu link */
 .js .nav .skip {

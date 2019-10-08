@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welome to the MKM Orient Express</title>
+    <title>Hotel | Welome to the MKM Orient Express</title>
     <link rel="stylesheet" type="text/css" href="sass/css.css">
     <link rel="stylesheet" type="text/css" href="sass/animate.min.css">
     <link rel="stylesheet" type="text/css" href="sass/media-queries.css">
@@ -13,8 +13,8 @@
 
 <body>
   <div class="container">
-      <header class="header animated fadeInUp">
-          <nav class=" nav flex">
+      <header class="header-static">
+          <nav class="nav flex">
               <a class="skip" href="#menu">Menu</a>
               <ul id="menu">
                   <li><a href="index.html" class="hvr-underline-from-center">Home</a></li>
@@ -25,14 +25,25 @@
           </nav>
       </header>
 
-      <div class="landing-holder">
-          <img src="images/landing-page-anim.svg">
-          <div class="copy-holder animated fadeIn">
-              <h1>You're Invited</h1>
-              <p>To join us on a once-in-a-lifetime journey aboard the world-famous Orient Express from London to Venice.</p>
-              <h2>25 - 28 APRIL 2020</h2>
-              <div class="reg-btn"><a href=""><h3>Register Now</h3></a></div>
-          </div>
+      <div class="content-holder">
+          <div class="flex-page">
+              <div class="column-1">
+                <h1 class="title animated fadeInLeft">The Hotel</h1>
+                <p class="animated fadeInLeft">The luxurious San Clemente Palace Kempinski in Venice will play host to you during your stay, and sits on a private island just minutes away from Piazza San Marco.
+                <br><br>
+                Easily accessible by a complimentary boat service, the heart of Venice is right on your doorstep, where you can wander through stunning architecture, take a Gondola ride on the Grand Canal, and explore boutique shopping in the city.
+                <br><br>
+                As you arrive in Venice, you’ll make your way to a proud member of the Leading Hotels of the World, where you can enjoy this exclusive retreat whilst taking in the authentic Venetian style and surroundings.
+                <br><br>
+                The hotel itself boasts 190 classically decorated rooms and suites, overlooking either the lagoon or centuries-old park. When it comes to cuisine, choose from the hotel’s three indulgent restaurants – Acquerello, La Dolce, and Insieme – for a culinary experience that will delight your senses.
+                </p>
+                <div class="reg-now animated fadeInUp"><a href="" target="_blank"><h3>Register Now</h3></a></div>
+              </div> 
+
+              <div class="column-2">
+                <img src="images/hotel-img.jpg" class="animated fadeInRight">
+              </div>
+          </div>  
       </div>
   </div>
 </body>
@@ -60,5 +71,6 @@
       } 
     });
 </script>
+
 
 </html>
