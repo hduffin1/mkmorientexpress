@@ -167,17 +167,12 @@ p {
 
     .gold {
         position: relative;
-        top: 0;
-        left: 0;
     }
 
     .image {
         position: absolute;
-        top: 60px;
-      left: 80px;
+        top: 15px;
+        left: 15px;
+        animation-delay: .6s;
     }
 }
-
-
-
-
