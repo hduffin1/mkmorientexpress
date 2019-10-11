@@ -164,6 +164,18 @@ p {
         width: 100%;
         animation-delay: .5s;
     }
+
+    .gold {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .image {
+        position: absolute;
+        top: 60px;
+      left: 80px;
+    }
 }
 
 

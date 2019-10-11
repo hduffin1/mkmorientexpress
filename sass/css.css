@@ -314,5 +314,15 @@ p {
   width: 100%;
   animation-delay: 0.5s;
 }
+.column-2 .gold {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.column-2 .image {
+  position: absolute;
+  top: 60px;
+  left: 80px;
+}
 
 /*# sourceMappingURL=css.css.map */
