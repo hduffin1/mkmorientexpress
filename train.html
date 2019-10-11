@@ -13,9 +13,7 @@
 </head>
 
 <body>
-  <div class="barba-wrapper">
-    <div class="barba-container">
-      <div class="container">
+    <div class="container">
       <header class="header-static">
           <nav class="nav flex">
               <ul id="menu">
@@ -48,34 +46,7 @@
               </div>
           </div>  
       </div>
-      </div>
     </div>
-  </div>
 </body>
-
-<script src="https://unpkg.com/@barba/core"></script>
-<script>
-    $('document').ready(function(){
-      var transEffect = Barba.BaseTransition.extend({
-          start: function(){
-            this.newContainerLoading.then(val => this.fadeInNewcontent($(this.newContainer)));
-          },
-          fadeInNewcontent: function(nc) {
-            nc.hide();
-            var _this = this;
-            $(this.oldContainer).fadeOut(1000).promise().done(() => {
-              nc.css('visibility','visible');
-              nc.fadeIn(1000, function(){
-                _this.done();
-              })
-            });
-          }
-      });
-      Barba.Pjax.getTransition = function() {
-        return transEffect;
-      }
-      Barba.Pjax.start();
-    });
-</script>
 
 </html>
