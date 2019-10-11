@@ -75,9 +75,6 @@ header {
 .nav ul ahover {
   cursor: pointer;
 }
-.nav ul aactive {
-  color: red;
-}
 
 /* Style the menu link */
 .js .nav .skip {
@@ -316,6 +313,16 @@ p {
 .column-2 img {
   width: 100%;
   animation-delay: 0.5s;
+}
+.column-2 .gold {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.column-2 .image {
+  position: absolute;
+  top: 60px;
+  left: 80px;
 }
 
 /*# sourceMappingURL=css.css.map */
