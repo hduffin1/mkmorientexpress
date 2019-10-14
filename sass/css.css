@@ -316,13 +316,12 @@ p {
 }
 .column-2 .gold {
   position: relative;
-  top: 0;
-  left: 0;
 }
 .column-2 .image {
   position: absolute;
-  top: 60px;
-  left: 80px;
+  top: 15px;
+  left: 15px;
+  animation-delay: 0.6s;
 }
 
 /*# sourceMappingURL=css.css.map */
