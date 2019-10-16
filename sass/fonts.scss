@@ -1,0 +1,39 @@
+h1 {
+    font-family: 'valenciaregular';
+    font-size: 55px;
+    color: #c3a343;
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(transparent, transparent),
+    url(../images/gold.jpg) repeat;
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-family: 'valenciaregular';
+    font-size: 35px;
+    margin-bottom: 20px;
+    -webkit-text-fill-color: $darkblue;
+    animation-delay: .5s;
+}
+
+h2 {
+    font-family: 'valenciaregular';
+    font-size: 30px;
+    color: #fffdf2;
+}
+
+h3 {
+    font-family: interstate, sans-serif;
+    font-weight: 700px;
+    font-size: 20px;
+    color: #fffdf2;
+}
+
+p {
+    margin: 0 auto;
+    font-family: interstate, sans-serif;
+    font-size: 15px;
+    color: $darkblue;
+}

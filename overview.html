@@ -14,90 +14,46 @@
 
 <body>
     <div class="container">
-      <header class="header-static">
+        <header class="header-static">
           <nav class="nav flex">
               <ul id="menu">
-                  <li><a href="index.html" class="hvr-underline-from-center">Home</a></li>
-                  <li><a href="overview.html" class="hvr-underline-from-center">Overview</a></li>
-                  <li><a href="train.html" class="hvr-underline-from-center">Train</a></li>
-                  <li><a href="hotel.html" class="hvr-underline-from-center">Hotel</a></li>
+                  <li><a href="index.html" class="transition hvr-underline-from-center">Home</a></li>
+                  <li><a href="overview.html" class="transition hvr-underline-from-center">Overview</a></li>
+                  <li><a href="train.html" class="transition hvr-underline-from-center">Train</a></li>
+                  <li><a href="hotel.html" class="transition hvr-underline-from-center">Hotel</a></li>
               </ul>
           </nav>
-      </header>
+        </header>
 
-          <main id="barba-wrapper">
-            <div class="barba-container">
-                <div class="content-holder">
-                  <div class="flex-page">
-                    <div class="column-1">
-                      <h1 class="title animated fadeInLeft">Overview</h1>
-                      <p class="animated fadeInLeft">In order to celebrate MKM’s milestone 25th anniversary, we are inviting you to join us on a once-in-a-lifetime journey aboard the world-famous Orient Express from London to Venice.
-                      <br><br>
-                      Staying aboard the British Pullman for a night before arriving at the San Clemente Palace in Venice, you’ll experience nothing but comfort and enchantment as your private on board cabin is transformed into a cosy bedroom – allowing you to relax at every point of the journey.
-                      <br><br>
-                      The end destination of Venice is one that promises a magnificent adventure in the ‘City of Canals’ – arguably one of the most beautiful and alluring cities in the world. 
-                      <br><br>
-                      Whilst in Venice, we’ll make the most of its vibrant and affluent spirit, enjoying a scenic drinks reception and lavish gala dinner during the two-night stay.
-                      <br><br>
-                      Thank you for your loyal and continued custom, and we can’t wait for you to join us on this incredible trip.
-                      </p>
-                      <div class="reg-now animated fadeInUp"><a href="" target="_blank"><h3>Register Now</h3></a></div>
-                    </div> 
+        <div class="content-holder">
+            <div class="flex-page">
+                <div class="column-1">
+                    <h1 class="title animated fadeInLeft">Overview</h1>
+                    <p class="animated fadeInLeft">In order to celebrate MKM’s milestone 25th anniversary, we are inviting you to join us on a once-in-a-lifetime journey aboard the world-famous Orient Express from London to Venice.
+                    <br><br>
+                    Staying aboard the British Pullman for a night before arriving at the San Clemente Palace in Venice, you’ll experience nothing but comfort and enchantment as your private on board cabin is transformed into a cosy bedroom – allowing you to relax at every point of the journey.
+                    <br><br>
+                    The end destination of Venice is one that promises a magnificent adventure in the ‘City of Canals’ – arguably one of the most beautiful and alluring cities in the world. 
+                    <br><br>
+                    Whilst in Venice, we’ll make the most of its vibrant and affluent spirit, enjoying a scenic drinks reception and lavish gala dinner during the two-night stay.
+                    <br><br>
+                    Thank you for your loyal and continued custom, and we can’t wait for you to join us on this incredible trip.
+                    </p>
+                    <div class="reg-now animated fadeInUp"><a href="" target="_blank"><h3>Register Now</h3></a></div>
+                </div> 
 
-                  <div class="column-2">
+                <div class="column-2">
                     <div class="gold">
-                      <img src="images/gold-img.png" class="gold-image animated fadeInRight">
-                       <img src="images/overview-img2.jpg" class="image animated fadeInRight">
+                        <img src="images/gold-img.png" class="gold-image animated fadeInRight">
+                        <img src="images/overview-img2.jpg" class="image animated fadeInRight">
                     </div>
-                  </div>
-                  </div>  
                 </div>
-            </div>
-          </main>
-    </div>
+            </div>  
+        </div>
+</div>
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
 
-<script type="text/javascript">
-  var BarbaWidget = {
-      init: function() {
-          var scope = this;
-          Barba.Pjax.start();
-          Barba.Prefetch.init();
-          Barba.Pjax.getTransition = function() {
-              return scope.MovePage;
-          };
-      },
-      MovePage: Barba.BaseTransition.extend({
-          start: function() {
-              Promise.all([this.newContainerLoading]).then(this.movePages.bind(this));
-          },
-          movePages: function() {
-              var scope = this;
-
-              TweenLite.set(this.newContainer, {
-                  visibility: 'visible',
-                  xPercent: 100,
-                  position: 'absolute',
-                  left: 0,
-                  top: 0,
-                  right: 0
-              });
-
-              TweenLite.to(this.oldContainer, 0.6, { xPercent: -100 });
-              TweenLite.to(this.newContainer, 0.6, { xPercent: 0, onComplete: function() {
-              TweenLite.set(scope.newContainer, { clearProps: 'all' });
-                  scope.done();
-              }});
-          }
-      })
-  };
-
-  document.addEventListener("DOMContentLoaded", function() {
-      BarbaWidget.init();
-  });
-</script>
 </body>
 </html>
