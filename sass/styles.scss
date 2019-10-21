@@ -8,6 +8,10 @@ body {
 @import 'fonts';
 @import 'nav';
 
+header {
+    display: none;
+}
+
 .container {
     max-width: 1000px;
     margin: 0 auto; 
