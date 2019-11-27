@@ -260,7 +260,7 @@ header {
 .copy-holder .reg-btn {
   text-transform: uppercase;
   margin: 0 auto;
-  width: 15%;
+  width: 25%;
   background: -webkit-linear-gradient(transparent, transparent), url(../images/gold.jpg) repeat;
   background: -o-linear-gradient(transparent, transparent);
   padding: 1px 1px;
