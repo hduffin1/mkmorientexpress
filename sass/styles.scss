@@ -5,6 +5,7 @@ body {
 
 @import 'colours';
 @import 'fonts/font';
+@import'slick';
 @import 'fonts';
 @import 'nav';
 
@@ -122,23 +123,26 @@ header {
 }
 
 .column-2 {
-    max-width: 45%;
+    max-width: 48%;
     img {
         width: 100%;
         animation-delay: .5s;
     }
 
-    .gold {
-        position: relative;
+    .image {
+        height: auto;
+        width: 100%;
     }
 
-    .image {
-        position: absolute;
-        top: 60px;
-        left: 80px;
-        top: 15px;
-        left: 15px;
-        animation-delay: .6s;
+    .carousel {
+        margin-bottom: 50px;
+        display: flex;
+        .left, .right {
+            height: 20px;
+            width: 30px;
+            cursor: pointer;
+            margin-top: 50%;
+        }
     }
 }
 
