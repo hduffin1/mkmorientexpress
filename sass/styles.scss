@@ -9,10 +9,6 @@ body {
 @import 'fonts';
 @import 'nav';
 
-header {
-    display: none;
-}
-
 .container {
     max-width: 1000px;
     margin: 0 auto; 
@@ -141,11 +137,7 @@ header {
             height: 20px;
             width: 30px;
             cursor: pointer;
-            margin-top: 50%;
         }
     }
 }
-
-
-
 
