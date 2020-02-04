@@ -8,6 +8,7 @@ body {
 @import'layout';
 @import 'nav';
 @import'itinerary';
+@import'info';
 
 .container {
     max-width: 1000px;
@@ -27,6 +28,7 @@ body {
 .landing-holder {
     margin-top: 20px;
     position: relative;
+    z-index: -1000000;
     img {
         max-height: 800px;
         margin-left: auto;
