@@ -2,11 +2,12 @@ body {
     background-color: #FFFDF2;
     height: 90vh;
 }
-
 @import 'colours';
 @import 'fonts/font';
 @import 'fonts';
+@import'layout';
 @import 'nav';
+@import'itinerary';
 
 .container {
     max-width: 1000px;
@@ -33,111 +34,3 @@ body {
         display: block;
     }
 }
-
-.copy-holder {
-    width: 100%;
-    margin: 0 auto;
-    position: absolute;
-    top: 21%;
-    text-align: center;
-    animation-delay: 5.2s;
-
-    h2 {
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
-
-    p {
-        margin: 0 auto;
-        width: 45%;
-        font-family: interstate, sans-serif;
-        font-size: 18px;
-        color: #fffdf2;
-    }
-
-    .reg-btn {
-        text-transform: uppercase;
-        margin: 0 auto;
-        width: 25%;
-        background: -webkit-linear-gradient(transparent, transparent),
-        url(../images/gold.jpg) repeat;
-        background: -o-linear-gradient(transparent, transparent);
-        padding: 1px 1px;
-        h3 {
-            background-color: #052d44;
-            padding: 10px 15px;
-            margin: 0;
-        }
-
-        a {
-            text-decoration: none;
-        }
-    }
-}
-
-.content-holder {
-    margin-top: 15%;
-}
-
-.column-1 {
-    max-width: 45%;
-
-    p {
-        animation-delay: .5s;
-    }
-
-    .reg-now {
-        width: 40%;
-        text-align: center;
-        border: 1px solid $darkblue;
-        padding: 1px 1px;
-        margin-top: 30px;
-        animation-delay: .5s;
-
-        h3 {
-            font-size: 16px;
-            margin: 0;
-            padding: 5px;
-            text-transform: uppercase;
-            color: $darkblue;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        &:hover {
-            border: 1px solid #f2d77c;
-            transition: .2s;
-            h3{
-                color: #f2d77c;
-                transition: .2s;
-            }
-        }
-    }
-}
-
-.column-2 {
-    max-width: 45%;
-    img {
-        width: 100%;
-        animation-delay: .5s;
-    }
-
-    .gold {
-        position: relative;
-    }
-
-    .image {
-        position: absolute;
-        top: 60px;
-        left: 80px;
-        top: 15px;
-        left: 15px;
-        animation-delay: .6s;
-    }
-}
-
-
-
-

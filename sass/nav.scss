@@ -2,7 +2,7 @@
     header {
         margin: 0;
         margin-top: 20px;
-        z-index: 20000;
+        z-index: 200000;
         background-color: $cream;
         animation-delay: 5.5s;
     }
@@ -49,10 +49,6 @@
       padding: 0;
       list-style-type: none;
 
-      li {
-        padding: 0px 90px;
-      }
-
       a {
         color: $darkblue;
         text-decoration: none;
@@ -67,29 +63,27 @@
       }
     }
 
-    /* Style the menu link */
+/* Style the menu link */
     .js .nav .skip {
+      font-family: interstate, sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      text-transform: uppercase;
       position: absolute;
-      font-weight: 600;
-      right: 1em;
-      top: 0.9em;
+      top: 20px;
+      right: 30px;
       overflow: hidden;
-      width: 2.9em;
+      width: 50px;
       height: 2.5em;
       text-align: center;
       line-height: 2.5em;
       text-transform: uppercase;
       text-decoration: none;
-
           &:hover {
               transition: .4s;
           }
-      } 
+    } 
 
-    /* Give the .nav ul a height when it's been opened, i.e. make it show */
-    .js .nav ul.open {
-      max-height: 70em;
-    }
 
     /* Hide and position the closed .nav ul */
     .js .nav ul {
@@ -98,66 +92,52 @@
       position: absolute;
       right: 1em;
       top: 3.5em;
-      transition: max-height 0.25s ease-out;
+      transition: max-height 1s ease-out;
     }
 
     /* Style the list items to appear under the menu link */
     .js nav li {
+      z-index: 1000000;
       text-align: right;
+      background-color: $cream;
     }
 
     /* Style the list item links for ease of touch on small screens */
     .js nav li a {
-      padding: 0.5em;
+      padding: 20px;
       display: block;
+      background-color: $cream;
     }
 
-  /* Style the menu link */
-  .js .nav .skip {
-    position: absolute;
-    font-weight: 600;
-    right: 1.3em;
-    top: 0.9em;
-    overflow: hidden;
-    width: 2.9em;
-    height: 2.5em;
-    text-align: center;
-    line-height: 2.5em;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-family: din-2014, sans-serif;
-    color: red;
-
-        &:hover {
-            transition: .4s;
-        }
-    } 
-
-  /* Give the .nav ul a height when it's been opened, i.e. make it show */
-  .js .nav ul.open {
+    /* Give the .nav ul a height when it's been opened, i.e. make it show */
+    .js .nav ul.open {
     max-height: 70em;
-    background-color: red;
-    border: 1px solid red;
-  }
+    }
 
-  /* Hide and position the closed .nav ul */
-  .js .nav ul {
-    max-height: 0;
-    overflow: hidden;
-    position: absolute;
-    right: 1em;
-    top: 3.5em;
-    transition: max-height 0.25s ease-out;
-  }
+    /* On screens larger than 1200px, remove the menu link and display all menu items */
+    @media screen and (min-width: 1200px) {
+      .js .nav ul {
+        width: 100%;
+        overflow: auto;
+        max-height: inherit; 
+        position: static;
+        display: flex;
+        justify-content: flex-start;
+        background-color: transparent;
+      }
+      .js .nav li {
+        text-align: left;
+        display: inline-block;
+        border-top: 0;
+      }
+      .js .nav li:last-child {
+        border: 0;
+      }
+      .js .nav .skip {
+        display: none;
+        visibility: hidden;
+      }
+    }
+/* Style the menu link end */
 
-  /* Style the list items to appear under the menu link */
-  .js nav li {
-    text-align: right;
-  }
 
-  /* Style the list item links for ease of touch on small screens */
-  .js nav li a {
-    padding: 0.5em;
-    display: block;
-  }
-/* navigation end */

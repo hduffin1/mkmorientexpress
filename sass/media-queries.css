@@ -1,26 +1,27 @@
-/* On screens larger than 818px, remove the menu link and display all menu items */
-@media screen and (min-width: 10px) {
-  .js .nav ul {
-    overflow: auto;
-    max-height: inherit; 
-    position: static;
-    display: flex;
-    justify-content: flex-start;
-    background-color: transparent;
-  }
-  .js .nav li {
-    text-align: left;
-    display: inline-block;
-    border-top: 0;
-  }
-  .js .nav li:last-child {
-    border: 0;
-  }
-  .js .nav .skip {
-    display: none;
-    visibility: hidden;
-  }
-}
+/* On screens larger than **, remove the menu link and display all menu items */
+@media screen and (min-width: 900px) {
+      .js .nav ul {
+        width: 100%;
+        overflow: auto;
+        max-height: inherit; 
+        position: static;
+        display: flex;
+        justify-content: flex-start;
+        background-color: transparent;
+      }
+      .js .nav li {
+        text-align: left;
+        display: inline-block;
+        border-top: 0;
+      }
+      .js .nav li:last-child {
+        border: 0;
+      }
+      .js .nav .skip {
+        display: none;
+        visibility: hidden;
+      }
+    }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -118,10 +119,6 @@ and (max-width: 991px) {
 
     body {
       margin: 20px;
-    }
-
-    .nav ul li {
-      padding: 0 55px;
     }
 
     .flex-page {
