@@ -49,6 +49,11 @@
       padding: 0;
       list-style-type: none;
 
+      li {
+        justify-content: space-between;
+        padding: 0 50px;
+      }
+
       a {
         color: $darkblue;
         text-decoration: none;
@@ -87,6 +92,7 @@
 
     /* Hide and position the closed .nav ul */
     .js .nav ul {
+      z-index: 1000000;
       max-height: 0;
       overflow: hidden;
       position: absolute;
@@ -97,7 +103,7 @@
 
     /* Style the list items to appear under the menu link */
     .js nav li {
-      z-index: 1000000;
+      
       text-align: right;
       background-color: $cream;
     }
