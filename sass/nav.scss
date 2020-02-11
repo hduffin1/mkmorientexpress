@@ -2,9 +2,9 @@
     header {
         margin: 0;
         margin-top: 20px;
-        z-index: 200000;
         background-color: $cream;
         animation-delay: 5.5s;
+        position: static;
     }
 
     .header-static {
@@ -47,11 +47,12 @@
     .nav ul {
       margin: 0;
       padding: 0;
-      list-style-type: none;
+      display: inline-block;
 
       li {
         justify-content: space-between;
-        padding: 0 30px;
+        padding: 0 350px;
+        display: inline-block;
       }
 
       a {
@@ -67,82 +68,5 @@
         }
       }
     }
-
-/* Style the menu link */
-    .js .nav .skip {
-      font-family: interstate, sans-serif;
-      font-weight: 700;
-      font-size: 14px;
-      text-transform: uppercase;
-      position: absolute;
-      right: 30px;
-      overflow: hidden;
-      width: 50px;
-      height: 2.5em;
-      text-align: center;
-      line-height: 2.5em;
-      text-transform: uppercase;
-      text-decoration: none;
-          &:hover {
-              transition: .4s;
-          }
-    } 
-
-
-    /* Hide and position the closed .nav ul */
-    .js .nav ul {
-      z-index: 1000000;
-      max-height: 0;
-      overflow: hidden;
-      position: absolute;
-      right: 1em;
-      top: 3.5em;
-      transition: max-height 1s ease-out;
-    }
-
-    /* Style the list items to appear under the menu link */
-    .js nav li {
-      
-      text-align: right;
-      background-color: $cream;
-    }
-
-    /* Style the list item links for ease of touch on small screens */
-    .js nav li a {
-      padding: 20px;
-      display: block;
-      background-color: $cream;
-    }
-
-    /* Give the .nav ul a height when it's been opened, i.e. make it show */
-    .js .nav ul.open {
-    max-height: 70em;
-    }
-
-    /* On screens larger than 1200px, remove the menu link and display all menu items */
-    @media screen and (min-width: 1200px) {
-      .js .nav ul {
-        width: 100%;
-        overflow: auto;
-        max-height: inherit; 
-        position: static;
-        display: flex;
-        justify-content: flex-start;
-        background-color: transparent;
-      }
-      .js .nav li {
-        text-align: left;
-        display: inline-block;
-        border-top: 0;
-      }
-      .js .nav li:last-child {
-        border: 0;
-      }
-      .js .nav .skip {
-        display: none;
-        visibility: hidden;
-      }
-    }
-/* Style the menu link end */
 
 
