@@ -79,7 +79,7 @@ p {
 .copy-holder .reg-btn {
   text-transform: uppercase;
   margin: 0 auto;
-  width: 25%;
+  width: 40%;
   z-index: 200000;
   background: -webkit-linear-gradient(transparent, transparent), url(../images/gold.jpg) repeat;
   background: -o-linear-gradient(transparent, transparent);
@@ -203,7 +203,7 @@ header {
 }
 .nav ul li {
   justify-content: space-between;
-  padding: 0 350px;
+  padding: 10px 35px;
   display: inline-block;
 }
 .nav ul a {
