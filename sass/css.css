@@ -95,7 +95,7 @@ p {
 }
 
 .content-holder {
-  margin-top: 90px;
+  margin-top: 50px;
 }
 
 .column-1 {
@@ -236,6 +236,27 @@ header {
 .info .column-2 {
   width: 45%;
   margin-top: 62px;
+}
+
+footer {
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+footer .flex {
+  justify-content: space-between;
+}
+footer .footer-logo-holder {
+  animation-delay: 0.5s;
+}
+footer .footer-logo-holder .mkm-logo {
+  height: 40px;
+}
+footer .footer-contact-details {
+  animation-delay: 0.5s;
+}
+footer .footer-contact-details a {
+  color: #052d44;
+  text-decoration: none;
 }
 
 .container {

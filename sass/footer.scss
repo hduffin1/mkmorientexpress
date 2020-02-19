@@ -1,0 +1,23 @@
+footer {
+    margin-top: 80px;
+    margin-bottom: 20px;
+
+    .flex {
+        justify-content: space-between;
+    }
+
+    .footer-logo-holder {
+        animation-delay: .5s;
+        .mkm-logo {
+            height: 40px;
+        }
+    }
+
+    .footer-contact-details {
+        animation-delay: .5s;
+        a {
+            color: $darkblue;
+            text-decoration: none;
+        }
+    }
+}
