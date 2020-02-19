@@ -28,9 +28,12 @@ body {
 }
 
 .landing-holder {
-    margin-top: 20px;
+    margin-top: 10px;
     position: relative;
     
+    .mkm-logo-white {
+        height: 60px;
+    }
     img {
         max-height: 800px;
         margin-left: auto;

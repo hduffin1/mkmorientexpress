@@ -287,8 +287,11 @@ footer .footer-contact-details a {
 }
 
 .landing-holder {
-  margin-top: 20px;
+  margin-top: 10px;
   position: relative;
+}
+.landing-holder .mkm-logo-white {
+  height: 60px;
 }
 .landing-holder img {
   max-height: 800px;
