@@ -259,6 +259,18 @@ footer .footer-contact-details a {
   text-decoration: none;
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  footer {
+    margin-top: 50px;
+  }
+  footer .flex {
+    flex-wrap: wrap;
+  }
+  footer .footer-logo-holder {
+    margin-bottom: 20px;
+  }
+}
 .container {
   max-width: 1000px;
   margin: 0 auto;
