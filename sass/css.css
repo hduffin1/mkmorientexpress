@@ -252,6 +252,7 @@ footer .footer-logo-holder .mkm-logo {
   height: 40px;
 }
 footer .footer-contact-details {
+  margin-top: 15px;
   animation-delay: 0.5s;
 }
 footer .footer-contact-details a {
