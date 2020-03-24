@@ -20,7 +20,8 @@
         <div class="coronavirus-read-more">
           <p>Please rest assured that we are keeping a close eye on this matter and will notify you immediately should we believe this could pose any form of disruption or risk to your well being or your enjoyment of this amazing trip in June.
             <br><br>
-            Updated: 12 March 2020
+            Updated:
+            <p id="date"></p>
           </p>
         </div>
         <div class="coronavirus-close">
@@ -54,7 +55,7 @@
             <img src="images/mkm25-new.svg" class="mkm-logo-white">
               <h1>You're Invited</h1>
               <p>To join us on a once-in-a-lifetime journey aboard the world-famous Venice Simplon Orient Express to Venice.</p>
-              <h2>28 June - 1 July 2020</h2>
+              <h2>11 - 14 April 2021</h2>
               <div class="reg-btn"><a href="https://eu.eventscloud.com/200198099" target="_blank"><h3>Click here to Register</h3></a></div>
           </div>
       </div>
@@ -86,5 +87,11 @@
         });
     });
 </script>
+
+<script>
+  var d = new Date();
+  document.getElementById("date").innerHTML = d;
+</script>
+
 </body>
 </html>
