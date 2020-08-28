@@ -303,6 +303,7 @@ footer .footer-contact-details a {
 }
 
 .coronavirus {
+  display: none;
   background: #052d44;
   position: fixed;
   bottom: 0;
